@@ -9,5 +9,8 @@ proj.marmalade/
 proj.winrt/
 proj.wp8/
 
+
+proj.win32/Debug.win32/
+
 #win32 system platform when vs open the *.opensdf cant be commit
 *.opensdf

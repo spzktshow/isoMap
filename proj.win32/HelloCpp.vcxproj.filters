@@ -7,6 +7,15 @@
     <Filter Include="Classes">
       <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\fmStatic">
+      <UniqueIdentifier>{a829bcc3-5991-42a4-a60c-6c0a79254313}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\map">
+      <UniqueIdentifier>{71eadab0-1296-4f93-b47d-6f266f90bf19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\moonSugar">
+      <UniqueIdentifier>{3cc220a7-8629-4e30-9f7e-d2172c7174fa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -18,6 +27,27 @@
     <ClCompile Include="..\Classes\HelloWorldScene.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\fmStatic\FSAssetsManager.cpp">
+      <Filter>Classes\fmStatic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\map\MapData.cpp">
+      <Filter>Classes\map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\map\MapView.cpp">
+      <Filter>Classes\map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\moonSugar\MoonSugar.cpp">
+      <Filter>Classes\moonSugar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\moonSugar\MSGeometry.cpp">
+      <Filter>Classes\moonSugar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\moonSugar\MSGroup.cpp">
+      <Filter>Classes\moonSugar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\moonSugar\MSMvc.cpp">
+      <Filter>Classes\moonSugar</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -28,6 +58,30 @@
     </ClInclude>
     <ClInclude Include="..\Classes\HelloWorldScene.h">
       <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\fmStatic\fmStatic.h">
+      <Filter>Classes\fmStatic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\fmStatic\FSAssetsManager.h">
+      <Filter>Classes\fmStatic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\map\MapData.h">
+      <Filter>Classes\map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\map\MapView.h">
+      <Filter>Classes\map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\moonSugar\MoonSugar.h">
+      <Filter>Classes\moonSugar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\moonSugar\MSGeometry.h">
+      <Filter>Classes\moonSugar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\moonSugar\MSGroup.h">
+      <Filter>Classes\moonSugar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\moonSugar\MSMvc.h">
+      <Filter>Classes\moonSugar</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

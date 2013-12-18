@@ -14,12 +14,14 @@ void MapView::setMapData(Map* mapData)
 /******************MapTileLayer************************/
 MapTileLayer::MapTileLayer()
 {
-
+	//set touchEnabled
+	this->setTouchEnabled(true);
+	CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, 1, true);
 }
 
 MapTileLayer::~MapTileLayer()
 {
-
+	CCDirector::sharedDirector()->getTouchDispatcher()->removeDelegate(this);
 }
 
 void MapTileLayer::draw()
@@ -80,6 +82,27 @@ MapTileLayer* MapTileLayer::create()
 		CC_SAFE_DELETE(mapTileLayer);
 		return NULL;
 	}
+}
+
+bool MapTileLayer::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent)
+{
+	CCLog("touch began");
+	return true;
+}
+
+void MapTileLayer::ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent)
+{
+	CCLog("touch ended");
+}
+
+void MapTileLayer::ccTouchCancelled(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent)
+{
+	CCLog("touch cancelled");
+}
+
+void MapTileLayer::ccTouchMoved(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent)
+{
+	CCLog("touch moved");
 }
 
 /***********************MapBackGroud********************/

@@ -41,7 +41,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	mapBackgroundLayer->addChild(bg);
 
 	scene->addChild(mapBackgroundLayer);
-		scene->addChild(mapTileLayer);
+	scene->addChild(mapTileLayer);
 
 	mapTileLayer->setMapData(mapModel->map);
 
